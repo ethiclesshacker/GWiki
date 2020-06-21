@@ -4,16 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>GWiki</title>
 </head>
 
 <body>
-    <p> Line 1
-        <a
-            href='javascript: (function () { content = document.getElementsByClassName("mw-parser-output")[0]; divs = content.getElementsByTagName("div"); for (i = divs.length - 1; i >= 0; i--) { divs[i].remove(); } sups = content.getElementsByTagName("sup"); for (i = sups.length - 1; i >= 0; i--) { sups[i].remove(); } ats = content.getElementsByTagName("a"); for (i = ats.length - 1; i >= 0; i--) { ats[i].replaceWith(ats[i].textContent); } document.body.innerHTML = content.innerHTML; document.body.style.padding = "10px"; })();'>
-            Link
-        </a>
-    </p>
+    <div class="header">
+        <h1>GWiki</h1>
+        <p>Declutter Wikipedia.</p>
+    </div>
+    <div class="contents">
+        <div class="setup">
+            <h3>Setup:</h3>
+            <ol>
+                <li>Make sure your bookmarks bar is visible on all pages.</li>
+                <li> Drag the link at the end of the line to your bookamrks bar. Click and drag this:
+                    <a
+                        href='javascript: (function () { content = document.getElementsByClassName("mw-parser-output")[0]; divs = content.getElementsByTagName("div"); for (i = divs.length - 1; i >= 0; i--) { divs[i].remove(); } sups = content.getElementsByTagName("sup"); for (i = sups.length - 1; i >= 0; i--) { sups[i].remove(); } ats = content.getElementsByTagName("a"); for (i = ats.length - 1; i >= 0; i--) { ats[i].replaceWith(ats[i].textContent); } document.body.innerHTML = content.innerHTML; document.body.style.padding = "10px"; })();'>
+                        GWiki
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <div class="use">
+            <h3>Using:</h3>
+            <ol>
+                <li>Go to any page on <a href="https://www.wikipedia.com/"> Wikipedia</a></li>
+                For example, <a href="https://www.wikipedia.com/wiki/rose">Rose</a>
+                <li>Click on the bookmarklet named <b>GWiki</b> on your bookmarks bar. </li>
+                <p><b>Voila!</b> Now the article is clean for distraction free reading and copy-pasting.</p>
+            </ol>
+        </div>
+    </div>
 </body>
 
 </html>
