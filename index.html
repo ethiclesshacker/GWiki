@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWiki</title>
+</head>
+
+<body>
+    <p> Line 1
+        <a
+            href='javascript: (function () { content = document.getElementsByClassName("mw-parser-output")[0]; divs = content.getElementsByTagName("div"); for (i = divs.length - 1; i >= 0; i--) { divs[i].remove(); } sups = content.getElementsByTagName("sup"); for (i = sups.length - 1; i >= 0; i--) { sups[i].remove(); } ats = content.getElementsByTagName("a"); for (i = ats.length - 1; i >= 0; i--) { ats[i].replaceWith(ats[i].textContent); } document.body.innerHTML = content.innerHTML; document.body.style.padding = "10px"; })();'>
+            Link
+        </a>
+    </p>
+</body>
+
+</html>
